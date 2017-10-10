@@ -32,8 +32,9 @@ $(window).load(function(){
 				}
 				sec.push(tru);
 			}
+			console.log(sec)
 			$("audio:not(:first)").remove();
-		},200)
+		},500)
 	}
 	list();
 	$(".progress p span i:eq(1)").text(sec[0]);
