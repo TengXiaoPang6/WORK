@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<link rel="stylesheet" type="text/css" href="../../bootstrap.min.css"/>
+		<script type="text/javascript" src="../../jquery.min.js" ></script>
+		<script type="text/javascript" src="index.js" ></script>
+		<script type="text/javascript" src="../../bootstrap.min.js" ></script>
+	</head>
+	<body>
+		<div class="bg"></div>
+		<div class="bg_black"></div>
+		<div class="main">
+			<div class="picture">
+					<img src="images/cd.png" class="cd"/>	
+					<img src="images/img.jpg" class="photo"/>
+					<img src="images/cd_tou.png" class="cd_tou"/>
+			</div>
+			<div class="lrc">
+			</div>
+			<div class="controls">
+				<audio src="music/薛之谦 - 演员.ogg"></audio>
+				<div class="begin">
+					<i class="iconfont">&#xe605;</i>
+					<i class="iconfont big">&#xe623;</i>
+					<i class="iconfont">&#xe64c;</i>
+				</div>
+				<div class="time">
+					<div class="img">
+						<img src="images/img.jpg" />
+					</div>
+					<div class="progress">
+						<p>演员-薛之谦<span><i>00:00</i> / <i>00:00</i></span></p>
+						<div class="totle">
+							<div class="now"></div>
+						</div>
+					</div>
+				</div>
+				<div class="list">
+					<i class="iconfont" data-toggle="popover" 
+						title="" 
+						index="0"
+						data-placement="top"
+						data-content="<ul style='color:#666;list-style:none;line-height:30px' class='sort'><li><i class='iconfont'>&#xe6be;</i>顺序播放</li><li><i class='iconfont'>&#xe501;</i>随机播放</li><li><i class='iconfont'>&#xe610;</i>单曲循环</li></ul>">
+						&#xe6be;</i>
+					<i class="iconfont" data-toggle="popover" 
+						title="" 
+						data-placement="top"
+						data-content="<input type='range' value=50 max=100 min=0 style='float:left'/><p style='color:black;text-align:center'>50%</p>">&#xe60a;</i>
+					<i class="iconfont space" data-toggle="popover" 
+						title="播放队列" 
+						data-placement="top"
+						data-content="">&#xe6e4;<span>0</span></i>
+					<i class="iconfont space">&#xe828;</i>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

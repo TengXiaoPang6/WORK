@@ -1,0 +1,267 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box !important; 
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+i{
+	font-style: normal;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('font/iconfont.eot');
+  src: url('font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('font/iconfont.woff') format('woff'),
+  url('font/iconfont.ttf') format('truetype'),
+  url('font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+}
+.bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(images/img.jpg) repeat center -400px;
+	background-size: 2500px;
+	filter: blur(20px);
+}
+.bg_black{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.6);
+}
+.main{
+	position: absolute;
+	top: 0;
+	width: 800px;
+	height: 100%;
+	padding: 0 100px;
+}
+.picture{
+	width: 450px;
+	height: 520px;
+	position: relative;
+	float: left;
+}
+.cd{
+	margin-top: 30px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.7);
+	border-radius: 50%;
+	cursor: pointer;
+	animation-play-state: paused;
+	/*animation: begin 4s linear infinite;*/
+}
+.photo{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	position: absolute;
+	top: 117px;
+	left: 87px;
+	cursor: pointer;
+	animation-play-state: paused;
+	/*animation: begin 4s linear infinite;*/
+}
+.cd_tou{
+	position: absolute;
+	top: 20px;
+	left: 310px;
+	transform: rotate(-22deg);
+	transform-origin: 60px 12px;
+	transition: all ease .8s; 
+	cursor: pointer;
+}
+@keyframes begin{
+	from{
+		transform: rotate(0);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+.lrc{
+	width: 300px;
+	height: 450px;
+	white-space: pre;
+	text-align: center;
+	float: left;
+	overflow: auto;
+	margin-top: 30px;
+	color: white;
+	font: 16px "微软雅黑";
+	line-height: 30px;
+	transition: all linear .5s;
+	position: relative;
+}
+.lrc::-webkit-scrollbar{
+	display: none;
+}
+.lrc::first-line{
+	font-size: 24px;
+	line-height: 50px;
+	font-weight: 600;
+}
+.controls{
+	width: 800px;
+	clear: both;
+	height: 80px;
+	padding: 30px 0;
+}
+.begin{
+	width: 180px;
+	float: left;
+}
+.begin i{
+	line-height: 80px;
+	font-size: 34px;
+	color: #999;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0 5px;
+	cursor: pointer;
+}
+.begin i:hover{
+	color: #8099AD;
+}
+.begin .big{
+	font-size: 40px;
+}
+.time{
+	width: 400px;
+	height: 80px;
+	float: left;
+}
+.time .img{
+	width: 80px;
+	height: 80px;
+	float: left;
+}
+.time .img img{
+	width: 80px;
+	height: 80px;
+}
+.time .progress{
+	width: 300px;
+	height: 80px;
+	margin-left: 20px;
+	float: left;
+	color: white;
+	padding: 10px 0;
+	font-size: 12px;
+	background: none;
+	box-shadow: none !important;
+}
+.progress p{
+	height: 40px;
+	line-height: 30px;
+}
+.progress span{
+	float: right;
+	color: #666;
+}
+.totle{
+	width: 300px;
+	height: 4px;
+	border-radius: 5px;
+	background: #666;
+	margin-top: 6px;
+	position: relative;
+	cursor: pointer;
+}
+.now{
+	width: 0px;
+	height: 4px;
+	border-radius: 5px;
+	background: #8099AD;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation-play-state: paused;
+	overflow: visible !important;
+}
+.now::after{
+	content: "";
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #8099AD;
+	position: absolute;
+	top: -2px;
+	right: -6px;
+	display: none;
+}
+.totle:hover .now::after{
+	display: block;
+}
+.list{
+	float: left;
+	margin-left: 20px;
+	height: 80px;
+	width: 200px;
+	color: #999;
+	line-height: 80px;
+}
+.list i{
+	font-size: 18px;
+	display: inline-block;
+	padding: 0 5px;
+	cursor: pointer;
+	vertical-align: m"music/演员 - 薛之谦.ogg",iddle;
+	outline: none;
+	width: 20px;
+}
+.list .space{
+	padding-left: 15px;
+}
+.list i:hover{
+	color: #8099AD;
+}
+.popover.top{
+	margin-top: 15px !important;
+}
+ul.music li{
+	list-style: none;
+	color: #666;
+	width: 300px;
+	padding: 0 10px;
+	line-height: 40px;
+	cursor: pointer;
+	height: 40px;
+	border-radius: 10px;
+}
+ul.music li:hover{
+	background: #F7F7F7;
+	color: #31C27C;
+}
+ul.music li p{
+	width: 200px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	float: left;
+	margin: 0 !important;
+}
+ul.music .active{
+	color: #31C27C;
+}
+ul.music .active span{
+	color: #31C27C;
+}
+ul.music li span{
+	float: right;
+	color: #999;
+}
+ul.sort li:hover{
+	cursor: pointer;
+	color: #31C27C;
+}
